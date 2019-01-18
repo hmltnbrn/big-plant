@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+.error-message {
+  padding: 10px;
+  background: $error-color;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+  font-weight: 300;
+}

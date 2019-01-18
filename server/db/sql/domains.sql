@@ -1,0 +1,20 @@
+/* START DROPS */
+
+DROP DOMAIN IF EXISTS NETEXT;
+DROP DOMAIN IF EXISTS PASSWORD;
+DROP DOMAIN IF EXISTS EMAIL;
+
+/* END DROPS */
+
+/* START CREATES */
+
+CREATE DOMAIN NETEXT AS TEXT
+CONSTRAINT not_empty CHECK (LENGTH(VALUE) > 0);
+
+CREATE DOMAIN PASSWORD AS TEXT
+CONSTRAINT valid_password CHECK (VALUE ~ '^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,}$');
+
+CREATE DOMAIN EMAIL AS TEXT
+CONSTRAINT valid_email CHECK (VALUE ~ '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$');
+
+/* END CREATES */

@@ -1,0 +1,35 @@
+-- DROP VIEWS
+
+-views_drops-
+
+-- DROP TABLES
+
+-tables_drops-
+
+-- DROP FUNCTIONS
+
+-functions_drops-
+
+-- DROP DOMAINS
+
+-domains_drops-
+
+-- CREATE DOMAINS
+
+-domains_creates-
+
+-- CREATE FUNCTIONS
+
+-functions_creates-
+
+-- CREATE TABLES
+
+-tables_creates-
+
+-- CREATE DATA
+
+-data_creates-
+
+-- CREATE VIEWS
+
+-views_creates-

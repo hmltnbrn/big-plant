@@ -1,0 +1,9 @@
+export const GET_ERRORS = 'GET_ERRORS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const GET_ALL_PLANTS = 'GET_ALL_PLANTS';
+export const GET_PLANT = 'GET_PLANT';
+export const GET_PLANT_WITH_COMMENTS = 'GET_PLANT_WITH_COMMENTS';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const ADD_FAVORITE = 'ADD_FAVORITE';
+export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
+export const TOGGLE_DRAWER = 'TOGGLE_DRAWER';

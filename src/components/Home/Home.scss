@@ -1,0 +1,8 @@
+.signed-out-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .button-link {
+    margin: 20px;
+  }
+}

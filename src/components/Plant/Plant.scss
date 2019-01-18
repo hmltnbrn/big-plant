@@ -1,0 +1,131 @@
+.plant-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 100px 0;
+}
+
+.plant-main {
+  display: flex;
+  margin: 30px 0 0 0;
+  .plant-image {
+    width: 600px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+  }
+  .plant-info{
+    margin: 0 0 0 50px;
+    width: 100%;
+    max-width: 400px;
+    h3 {
+      margin: 0 0 25px 0;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    h4 {
+      font-size: 20px;
+      margin: 40px 0 20px 0;
+    }
+    .comments-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .comment {
+        background: #d4f2b7;
+        padding: 20px;
+        margin: 0 0 10px 0;
+      }
+    }
+    .favorite-button {
+      display: flex;
+      margin: 20px 0 0 0;
+      & i {
+        color: gold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.button-container {
+  justify-content: flex-end;
+  margin: 30px 0 0 0;
+}
+
+.button-link {
+  margin: 0;
+}
+
+.form-group, .form-group textarea {
+  margin: 0 !important;
+}
+
+@media (max-width: 1000px) {
+  .plant-main {
+    .plant-image {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .plant-main {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  .plant-main {
+    .plant-image {
+      width: 400px;
+      height: 400px;
+    }
+    .plant-info {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 756px) {
+  .plant-main {
+    flex-direction: column;
+    align-items: center;
+    .plant-image {
+      width: 600px;
+      height: 600px;
+    }
+    .plant-info {
+      margin: 20px 0 0 0;
+      max-width: 400px;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .plant-main {
+    .plant-image {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-main {
+    .plant-image {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
